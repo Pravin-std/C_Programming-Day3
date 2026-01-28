@@ -2,21 +2,20 @@
 int main()
 {
     int type;
-    
     scanf("%d",&type);
     
     switch(type)
     {
         case 1:
-        printf("$80000");
+        printf("$1200");
         break;
 
         case 2:
-       printf("$60000");
+        printf("$800");
         break;
 
         case 3:
-        printf("45000");
+        printf("$500");
         break;
 
     }

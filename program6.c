@@ -1,14 +1,16 @@
 #include <stdio.h>
 int main()
 {
-    int km;
+    int days;
     int choice;
-    scanf("%d",&km);
+    scanf("%d",&days);
+    int fine = 0;
+    int total = 0;
 
-    if(km <= 5)
+    if(days <= 5)
     {
         choice = 1;
-    }else if(km >= 6 && km <=10)
+    }else if(days <=10)
     {
         choice = 2;
     }else
@@ -19,17 +21,21 @@ int main()
     switch(choice)
     {
         case 1:
-       printf("Transport Fee $800");
+        fine = 50;
+        total = fine * days;
         break;
 
         case 2:
-        printf("Transport Fee $1200");
+        fine = 100;
+        total = fine * days;
         break;
 
         case 3:
-        printf("Transport Fee $1800");
+        fine = 200;
+        total = fine * days;
         break;
 
     }
+    printf("$%d",total);
     return 0;
 }

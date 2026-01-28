@@ -1,28 +1,24 @@
 #include <stdio.h>
 int main()
 {
-    int accounttype;
-    int year;
-    int interest = 0;
-    scanf("%d",&accounttype);
-    scanf("%d",&year);
-
-    switch(accounttype)
+    int type;
+    
+    scanf("%d",&type);
+    
+    switch(type)
     {
         case 1:
-        interest = 4;
+        printf("$40");
         break;
 
         case 2:
-        if(year <= 3)
-        {
-            interest = 5;
-        }else
-        {
-            interest = 7;
-        }
+       printf("$120");
         break;
+
+        case 3:
+        printf("Free");
+        break;
+
     }
-    printf("Interest %d per",interest);
     return 0;
 }

@@ -1,14 +1,14 @@
 #include <stdio.h>
 int main()
 {
-    int km;
+    int year;
     int choice;
-    scanf("%d",&km);
+    scanf("%d",&year);
 
-    if(km <= 5)
+    if(year <= 1)
     {
         choice = 1;
-    }else if(km >= 6 && km <=10)
+    }else if(year <=2)
     {
         choice = 2;
     }else
@@ -19,15 +19,15 @@ int main()
     switch(choice)
     {
         case 1:
-       printf("Transport Fee $800");
+       printf("Under Warranty");
         break;
 
         case 2:
-        printf("Transport Fee $1200");
+        printf("Limited warranty");
         break;
 
         case 3:
-        printf("Transport Fee $1800");
+        printf("Out of Warranty");
         break;
 
     }

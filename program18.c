@@ -2,23 +2,17 @@
 int main()
 {
     int type;
-    
     scanf("%d",&type);
-    
+
     switch(type)
     {
         case 1:
-        printf("$80000");
+        printf("Consultaion Fee $500");
         break;
 
         case 2:
-       printf("$60000");
-        break;
-
-        case 3:
-        printf("45000");
+       printf("Consultaion Fee $1200");
         break;
 
     }
-    return 0;
 }

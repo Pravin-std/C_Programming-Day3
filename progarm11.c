@@ -8,15 +8,15 @@ int main()
     switch(type)
     {
         case 1:
-        printf("$80000");
+        printf("Membership Fee $1500");
         break;
 
         case 2:
-       printf("$60000");
+        printf("Membership Fee $4000");
         break;
 
         case 3:
-        printf("45000");
+        printf("Membership Fee $7000");
         break;
 
     }
